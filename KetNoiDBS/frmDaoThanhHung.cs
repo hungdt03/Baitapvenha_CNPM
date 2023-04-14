@@ -166,5 +166,13 @@ namespace KetNoiDBS
             cmbKhoa.DataBindings.Clear();
             cmbKhoa.DataBindings.Add("DisplayMember", datagrdviewKhoa.DataSource, "MaKhoa");
         }
+
+        private void frmDaoThanhHung_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            conn.Close();
+            conn.Dispose();
+            dset.Dispose();
+            
+        }
     }
 }

@@ -150,6 +150,7 @@
             this.Controls.Add(this.datagrdviewKhoa);
             this.Name = "frmDaoThanhHung";
             this.Text = "Quản Lí SInh viên";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDaoThanhHung_FormClosing);
             this.Load += new System.EventHandler(this.frmDaoThanhHung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagrdviewKhoa)).EndInit();
             this.ResumeLayout(false);
